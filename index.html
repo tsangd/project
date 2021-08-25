@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <!--HTML5 PAGE STRUCTURE-->
+  <!--<header> CONTRAINS BRANDINGS LIKE LOGOS-->
+  <!--<nav>  navigational section of the site-->
+  <!--<Article> The web page main content 
+    <section> divided section of main content x2-->
+  <!--<aside> contains extra info and related content and links-->
+  <!--<footer> copyright, provacy policy, terms of use-->
+  <!--FOR SEO(search engine optimisation H1 only for title (nothing else))-->
+  <body>
+    <!-----------------HEADER START------------------------------->
+    <article class="topBanner">
+      <!----------------TOP button BAR---------------->
+      <div class="logo">
+        <a href="#"
+          ><img
+            src="./IMAGES/logo-2.png"
+            alt="NOT WORKING"
+            style="
+              width: 20%;
+              max-width: 100%;
+              height: auto;
+              border: blue groove;
+            "
+        /></a>
+      </div>
+      <!----------------TOP  BAR---------------->
+      <!----------------TOP button BAR---------------->
+      <article>
+        <a href="#" class="topButton"
+          >Your Wish List <i class="fa fa-arrow-right" aria-hidden="true"></i
+        ></a>
+      </article>
+      <!----------------TOP button BAR---------------->
+      <!----------------TOP NAV BAR---------------->
+      <div class="navBar">
+        <a href="#"><i class="fa fa-handshake-o"></i> サービスについて</a>
+        <a href="#"><i class="fa fa-fw fa-newspaper-o"></i>お知らせ</a>
+        <a href="#"><i class="fa fa-fw fa-star"></i>お気に入り</a>
+        <a href="#"><i class="fa fa-fw fa-search"></i>検索</a>
+        <a href="#" class="homeActive"><i class="fa fa-fw fa-home"></i>HOME</a>
+      </div>
+    </article>
+
+    <!----------------TOP NAV BAR---------------->
+    <!-----------------SlideShow SECTION-------------------->
+    <!-- Slideshow container -->
+    <div class="mainSection">
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade" id="mainImages">
+          <img src="./IMAGES/slideShow1.png" style="width: 100%" />
+          <div class="text">Amazing Sports Car</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./IMAGES/slideShow2.png" style="width: 100%" />
+          <div class="text">The Fast One</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./IMAGES/SlideShow3.png" style="width: 100%" />
+          <div class="text">Beautiful design</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="./IMAGES//slideShow1.png" style="width: 100%" />
+          <div class="text">Wonderful craftmanship</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="./IMAGES/slideShow2.png" style="width: 100%" />
+          <div class="text">Amazing speed</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </div>
+    <!-----------------SlideShow END-------------------->
+
+    <!---------------------ARTICLE SECTION------------------->
+    <div class="mainHeader">
+      <h2>Recommmend Cars to Buy</h2>
+      <p>
+        Welcome to the Car dealership, we have all kinds of different cars.<br /><br />These
+        cars are amazing and one of a kind, please look through our catalogue.
+      </p>
+    </div>
+    <div class="mainRow">
+      <div class="mainColumn">
+        <div class="carBorder">
+          <img src="./IMAGES/car1.png" alt="car1" style="width: 100%" />
+          <figcaption class="mainCaption">Mazda <br />The SUV Type</figcaption>
+          <div class="pinCar">
+            <a href="#" class="addLink"
+              >お気に入り追加 <img src="./ASSETS/pin.png" alt=""
+              style="position: relative; top: 0.5rem;"
+            /></a>
+          </div>
+          <div class="carDetails">
+            <a href="#"
+              ><button type="button" class="carDetailsButton">
+                詳細を見る<i
+                  class="fa fa-arrow-right"
+                  aria-hidden="true"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="mainColumn">
+        <div class="carBorder">
+          <img src="./IMAGES/car2.png" alt="car1" style="width: 100%" />
+          <figcaption class="mainCaption">
+            Nissan <br />The Family Type
+          </figcaption>
+          <div class="pinCar">
+            <a href="#" class="addLink"
+              >お気に入り追加 <img src="./ASSETS/pinCheck.png" alt=""
+              style="width:10%;position: relative; top: 0.5rem;"
+            /></a>
+          </div>
+          <div class="carDetails">
+            <a href="#"
+              ><button type="button" class="carDetailsButton">
+                詳細を見る<i
+                  class="fa fa-arrow-right"
+                  aria-hidden="true"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="mainColumn">
+        <div class="carBorder">
+          <img src="./IMAGES/car3.png" alt="car1" style="width: 87%" />
+          <figcaption class="mainCaption">
+            Jaguar <br />The Fast Type
+          </figcaption>
+          <div class="pinCar">
+            <a href="#" class="addLink"
+              >お気に入り追加 <img src="./ASSETS/pin.png" alt=""
+              style="position: relative; top: 0.5rem;"
+            /></a>
+          </div>
+          <div class="carDetails">
+            <a href="#"
+              ><button type="button" class="carDetailsButton">
+                詳細を見る<i
+                  class="fa fa-arrow-right"
+                  aria-hidden="true"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="mainColumn">
+        <div class="carBorder">
+          <img src="./IMAGES/car4.png" alt="car1" style="width: 100%" />
+          <figcaption class="mainCaption">
+            Toyota <br />The Road Type
+          </figcaption>
+          <div>
+            <a href="#" class="addLink"
+              >お気に入り追加 <img src="./ASSETS/pin.png" alt="" 
+              style="position: relative; top: 0.5rem;"
+            /></a>
+          </div>
+          <div class="carDetails">
+            <a href="#"
+              ><button type="button" class="carDetailsButton">
+                詳細を見る<i
+                  class="fa fa-arrow-right"
+                  aria-hidden="true"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <!----------------------END------------------------------------>
+    <!---------------------CATALOGUE SECTION START--------------------------->
+    <div class="mainRow">
+      <div class="catalogueColumn">
+        <div class="catalogueBorder">
+          <h3 class="catalogueTitle">Search Type of Car</h3>
+          <!-------------------------ROW 1--------------------->
+          <ul class="catalogueMenu">
+            <li class="catalogueItem">
+              <a class="catalogueItem1" href="#"
+                ><img
+                  class="catalogueImage"
+                  src="./CATALOGUE/car1.png"
+                  alt="MISSING"
+                />
+              </a>
+              <figcaption>Car 1</figcaption>
+              <label class="box">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <a class="catalogueItem2" href="#"
+                ><img
+                  class="catalogueImage"
+                  src="./CATALOGUE/car2.png"
+                  alt="MISSING"
+                />
+              </a>
+              <figcaption>Car 2</figcaption>
+              <label class="box">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <a class="catalogueItem" href="#"
+                ><img
+                  class="catalogueImage"
+                  src="./CATALOGUE/car3.png"
+                  alt="MISSING"
+                />
+              </a>
+              <figcaption>Car 3</figcaption>
+              <label class="box">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+          </ul>
+          <br />
+          <!----------------------ROW 2--------------------->
+          <ul class="catalogueMenu">
+            <li class="catalogueItem">
+              <a class="catalogueItem1" href="#"
+                ><img
+                  class="catalogueImage"
+                  src="./CATALOGUE/car4.png"
+                  alt="MISSING"
+                />
+              </a>
+              <figcaption>Car 4</figcaption>
+              <label class="box">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <a class="catalogueItem2" href="#"
+                ><img
+                  class="catalogueImage"
+                  src="./CATALOGUE/car5.png"
+                  alt="MISSING"
+                />
+              </a>
+              <figcaption>Car 5</figcaption>
+              <label class="box">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <a class="catalogueItem" href="#"
+                ><img
+                  class="catalogueImage"
+                  src="./CATALOGUE/car6.png"
+                  alt="MISSING"
+                />
+              </a>
+              <figcaption>Car 6</figcaption>
+              <label class="box">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+          </ul>
+          <br />
+          <!----------------------ROW 3--------------------->
+          <ul class="catalogueMenu">
+            <li class="catalogueItem">
+              <a class="catalogueItem1" href="#"
+                ><img
+                  class="catalogueImage"
+                  src="./CATALOGUE/car7.png"
+                  alt="MISSING"
+                />
+              </a>
+              <figcaption>Car 7</figcaption>
+              <label class="box">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <a class="catalogueItem2" href="#"
+                ><img
+                  class="catalogueImage"
+                  src="./CATALOGUE/car8.png"
+                  alt="MISSING"
+                />
+              </a>
+              <figcaption>Car 8</figcaption>
+              <label class="box">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <a class="catalogueItem" href="#"
+                ><img
+                  class="catalogueImage"
+                  src="./CATALOGUE/car9.png"
+                  alt="MISSING"
+                />
+              </a>
+              <figcaption>Car 9</figcaption>
+              <label class="box">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+          </ul>
+          <br />
+          <h3 class="searchTitle">Search Option</h3>
+          <div class="searchCatalogue">
+            <p id="catalogueText">Car Maker:</p>
+            <button onclick="myFunction()" class="dropbtn">
+              Nissan...
+              <img
+                src="./ASSETS/arrowDown.png"
+                style="position: relative; top: 10px"
+                alt=""
+              />
+            </button>
+            <div id="searchDropdown" class="dropdown-content">
+              <input
+                type="text"
+                placeholder="Search.."
+                id="userEnter"
+                onkeyup="filterFunction()"
+              />
+              <a>Nissan</a>
+              <a>Toyota</a>
+              <a>Hyundai</a>
+              <a>Mazda</a>
+              <a>Ferrari</a>
+              <a>Subaru</a>
+              <a>Mercedes-Benz</a>
+            </div>
+            <br />
+            <p id="catalogueText2">Engine CC:</p>
+            <button onclick="myFunction2()" class="dropbtn2">
+              660CC
+              <img
+                src="./ASSETS/arrowDown.png"
+                style="position: relative; top: 10px"
+                alt=""
+              />
+            </button>
+            <div id="searchDropdown2" class="dropdown-content">
+              <input
+                type="text"
+                placeholder="Engine CC"
+                id="userEnter"
+                onkeyup="filterFunction()"
+              />
+              <a>100CC</a>
+              <a>200CC</a>
+              <a>300CC</a>
+              <a>400CC</a>
+              <a>500CC</a>
+              <a>600CC</a>
+              <a>700CC</a>
+            </div>
+            <div>
+              <p id="catalogueText2">AT/MT: </p>
+              <label class="switch">
+                <input type="checkbox" />
+                <div class="slider"></div>
+                <div class="sliderText"></div>
+              </label>
+            </div>
+          </div>
+          <br /><br /><br /><br />
+          <div>
+            <a
+              ><button type="submit" class="searchButton">
+                Search
+                <i class="fa fa-arrow-right" aria-hidden="true"></i></button
+            ></a>
+            <br /><br /><br />
+          </div>
+        </div>
+      </div>
+      <div class="makerSearch">
+        <div class="makerBorder1">
+          <h3 class="catalogueTitle" style="position: relative; top: -1rem">
+            メーカーから探す
+          </h3>
+          <div class="searchCatalogue3">
+            <div class="dropDown3">
+              <p id="catalogueText3">Car Maker:</p>
+              <button onclick="myFunction3()" class="dropbtn3">
+                Nissan...
+                <img
+                  src="./ASSETS/arrowDown.png"
+                  style="position: relative; top: 10px"
+                  alt=""
+                />
+              </button>
+              <div id="searchDropdown3" class="dropdown-content">
+                <input
+                  type="text"
+                  placeholder="Search.."
+                  id="userEnter"
+                  onkeyup="filterFunction()"
+                />
+                <a>Nissan</a>
+                <a>Toyota</a>
+                <a>Hyundai</a>
+                <a>Mazda</a>
+                <a>Ferrari</a>
+                <a>Subaru</a>
+                <a>Mercedes-Benz</a>
+              </div>
+            </div>
+            <div class="dropDown4">
+              <p id="catalogueText4">Car Type:</p>
+              <button onclick="myFunction4()" class="dropbtn4">
+                660CC
+                <img
+                  src="./ASSETS/arrowDown.png"
+                  style="position: relative; top: 10px"
+                  alt=""
+                />
+              </button>
+              <div id="searchDropdown4" class="dropdown-content">
+                <input
+                  type="text"
+                  placeholder="Engine CC"
+                  id="userEnter"
+                  onkeyup="filterFunction()"
+                />
+                <a>DUMMY</a>
+                <a>DUMMY</a>
+                <a>DUMMY</a>
+                <a>DUMMY</a>
+                <a>DUMMY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="makerBorder2">
+          <ul class="catalogueMenu">
+            <li class="catalogueItem">
+              <a class="catalogueItem1" href="#"
+                ><img
+                  class="catalogueImage"
+                  src="./CATALOGUE/car1.png"
+                  alt="MISSING"
+                />
+              </a>
+              <figcaption>Car 1</figcaption>
+              <label class="box">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <a class="catalogueItem2" href="#"
+                ><img
+                  class="catalogueImage"
+                  src="./CATALOGUE/car8.png"
+                  alt="MISSING"
+                />
+              </a>
+              <figcaption>Car 2</figcaption>
+              <label class="box">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <a class="catalogueItem" href="#"
+                ><img
+                  class="catalogueImage"
+                  src="./CATALOGUE/car6.png"
+                  alt="MISSING"
+                />
+              </a>
+              <figcaption>Car 3</figcaption>
+              <label class="box">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="makerBorder3">
+        <h3 class="searchTitle">オプション検索</h3>
+        <div class="searchCatalogue4">
+          <div class="dropDown5">
+            <p id="catalogueText5">Engine Power:</p>
+            <button onclick="myFunction5()" class="dropbtn5">
+              660CC
+              <img
+                src="./ASSETS/arrowDown.png"
+                style="position: relative; top: 10px"
+                alt=""
+              />
+            </button>
+            <div id="searchDropdown5" class="dropdown-content">
+              <input
+                type="text"
+                placeholder="Search.."
+                id="userEnter"
+                onkeyup="filterFunction()"
+              />
+              <a>1000CC</a>
+              <a>750CC</a>
+              <a>500CC</a>
+              <a>450CC</a>
+              <a>300CC</a>
+              <a>150CC</a>
+              <a>10CC</a>
+            </div>
+            <div class="switchButton">
+              <p id="catalogueText2">AT/MT:</p>
+              <label class="switch">
+                <input type="checkbox" />
+                <div class="slider"></div>
+                <div class="sliderText"></div>
+              </label>
+            </div>
+            <div>
+              <a
+                ><button type="submit" class="searchButton2">
+                  Search
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i></button
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="searchBorder">
+        <h3 class="searchTitle2">Full word 検索</h3>
+        <div class="fullwordBox">
+          <form class="fullWord">
+            <input type="text" placeholder="Search.." name="search" />
+          </form>
+        </div>
+        <div>
+          <a
+            ><button type="submit" class="searchButton3">
+              Search
+              <i class="fa fa-arrow-right" aria-hidden="true"></i></button
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!----------------------NEWS SECTION--------------------->
+    <a href="#"><img class="arrowLink" src="./ASSETS/arrowRight.png" alt="nothing"></a>
+    <a href="#"><img class="arrowLink2" src="./ASSETS/arrowRight.png" alt="nothing"></a>
+    <a href="#"><img class="arrowLink3" src="./ASSETS/arrowRight.png" alt="nothing"></a>
+    <div class="newsSection">
+      <div class="borderTitle"></div>
+      <h3 class="newsTitle">お知らせ</h3>
+      <div>
+        <a
+          ><button type="submit" class="newsButton">
+            Read all news
+            </a>
+      </div>
+      <div class="newsSection1">
+        <div class="newsBottomBorder1">
+          <div class="newsSideBorder1">
+            <a href="#"><h3 class="newsTextHeader1">2017 / 01 /15</h3></a>
+            <a href="#"><p class="newsText1">DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT</p></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="newsSection2">
+        <div class="newsBottomBorder2">
+          <div class="newsSideBorder2">
+            <a href="#"><h3 class="newsTextHeader2">2018 / 05 /12</h3></a>
+            <a href="#"><p class="newsText2">DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="newsSection3">
+        <div class="newsBottomBorder3">
+          <div class="newsSideBorder3">
+            <h3 class="newsTextHeader3">2020 / 12 /22</h3>
+            <a href="#"><p class="newsText3">DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="backToTopButton">
+        <a href="./index.html"><img src="./ASSETS/backToTop.png" alt="#"></a>
+      </div>
+    </div>
+    <!-------------------------------CONTACT / ADDRESS---------------------->
+    <div class="contactBanner">
+      <div class="contactLogo">
+        <a href="#"
+          ><img 
+            src="./IMAGES/logo-2.png"
+            alt="NOT WORKING"
+            style="
+              width: 50%;
+              height: auto;
+            "
+        /></a>
+      </div>
+      <p>.</p>
+      <p id="contactText1">ZIP-CODE 000-0000</p>
+      <p id="contactText2">○○県○○市○○○○0-0-0</p>
+      <p id="contactText3">○○ビル　○F</p>
+    </div>
+    <div class="contactBanner">
+      <a href=""><p class="contactText4">DUMMY TEXT              DUMMY TEXT</p></a>
+      <a href=""><p class="contactText5">DUMMY TEXT              DUMMY TEXT</p></a>
+      <a href=""><p class="contactText6">DUMMY TEXT              DUMMY TEXT</p></a>
+      <br><br>
+    </div>
+    <div class="whiteSpace">
+      <br><br>
+      <p style="opacity: 0">invisible text</p>
+    </div>
+    <!------------------------FOOTER-------------------------->
+    <div class="footerBanner">
+      <footer>&copy;copyright</footer>
+    </div>
+    <!---------------------FOOTER END--------------------->
+    <!----------------------JAVASCRIPT-------------------->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+      /*------When User clicks on button, shows search dropdown for first box--------------- */
+      function myFunction() {
+        document.getElementById("searchDropdown").classList.toggle("show");
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("userEnter");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("searchDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+      /*------When User clicks on button, shows search dropdown for second box--------------- */
+      function myFunction2() {
+        document.getElementById("searchDropdown2").classList.toggle("show");
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("userEnter");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("searchDropdown2");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+      /*------When User clicks on button, shows search dropdown for second box---------------*/
+      function myFunction3() {
+        document.getElementById("searchDropdown3").classList.toggle("show");
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("userEnter");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("searchDropdown3");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+      function myFunction4() {
+        document.getElementById("searchDropdown4").classList.toggle("show");
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("userEnter");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("searchDropdown4");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+      function myFunction5() {
+        document.getElementById("searchDropdown5").classList.toggle("show");
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("userEnter");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("searchDropdown5");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+      /*------When User clicks on button, shows search dropdown for fourth box--------------- */
+    </script>
+    <!------------------------SCRIPT END------------------->
+  </body>
+</html>
